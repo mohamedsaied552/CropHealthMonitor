@@ -62,6 +62,11 @@ models/*.h5
 *.zip
 *.tar.gz
 
+# Keep the deployed inference model in git for Streamlit Cloud
+!models/
+!models/plant_model.h5
+!models/class_names.json
+
 # OS specific
 .DS_Store
 Thumbs.db
