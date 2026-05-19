@@ -1,0 +1,37 @@
+# Configuration file for Smart Crop Health Monitor
+
+# Model Configuration
+MODEL:
+  TYPE: "mobilenetv2"  # Options: custom, mobilenetv2, resnet50
+  INPUT_SIZE: 224
+  NUM_CLASSES: 15
+  WEIGHTS_PATH: "models/plant_model.h5"
+
+# Training Configuration
+TRAINING:
+  EPOCHS: 50
+  BATCH_SIZE: 32
+  LEARNING_RATE: 0.001
+  VALIDATION_SPLIT: 0.15
+  TEST_SPLIT: 0.15
+  DATA_AUGMENTATION: true
+  EARLY_STOPPING_PATIENCE: 10
+
+# Dataset Configuration
+DATASET:
+  PATH: "dataset/PlantVillage"
+  TEST_SIZE: 0.15
+  VAL_SIZE: 0.15
+  
+# Prediction Configuration
+PREDICTION:
+  CONFIDENCE_THRESHOLD: 0.5
+  TOP_K_PREDICTIONS: 3
+  RETURN_REMEDY: true
+
+# Streamlit Configuration
+STREAMLIT:
+  THEME: "light"
+  MAX_UPLOAD_SIZE: 200  # MB
+  ALLOW_CAMERA: true
+  DISPLAY_CONFIDENCE: true

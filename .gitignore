@@ -1,0 +1,77 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# TensorFlow and ML
+*.h5
+*.pb
+*.ckpt
+*.meta
+runs/
+logs/
+tensorboard_logs/
+
+# Large files and datasets
+dataset/PlantVillage/
+models/*.h5
+*.zip
+*.tar.gz
+
+# OS specific
+.DS_Store
+Thumbs.db
+.env
+.env.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit cache
+.streamlit/
